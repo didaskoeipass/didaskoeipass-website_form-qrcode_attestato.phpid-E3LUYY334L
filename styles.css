@@ -22,29 +22,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ✅ Custom alert icon override */
-.alert.alert-success:before {
-  content: none !important;
-  display: none !important;
-}
-
-/* ✅ Style for the PNG icon inside the alert */
-.alert.alert-success img.custom-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
+/* ✅ Style for PNG icon in the success alert */
 .alert.alert-success:before {
   content: "";
   display: inline-block;
-  background-image: url('Untitled-1.png');
-  background-size: contain;
+  background-image: url('Untitled-1.png'); /* Replace with your PNG name if different */
+  background-size: 16px 16px;
   background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   margin-right: 10px;
   vertical-align: middle;
 }
-
