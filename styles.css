@@ -1,11 +1,11 @@
-/* Icon font setup (optional if unused) */
+/* Placeholder styles.css for icomoon */
 @font-face {
   font-family: 'icomoon';
-  src: url('icomoon.eot');
-  src: url('icomoon.eot?#iefix') format('embedded-opentype'),
-       url('icomoon.woff') format('woff'),
-       url('icomoon.ttf') format('truetype'),
-       url('icomoon.svg#icomoon') format('svg');
+  src:  url('icomoon.eot');
+  src:  url('icomoon.eot?#iefix') format('embedded-opentype'),
+        url('icomoon.woff') format('woff'),
+        url('icomoon.ttf') format('truetype'),
+        url('icomoon.svg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,26 +22,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ✅ Remove built-in checkmark icon */
+/* â Style for PNG icon in the success alert */
+.alert.alert-success:before {
+  content: "";
+  display: inline-block;
+  background-image: url('Untitled-1.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+/* Remove default :after icon from styled alerts */
+.alert[class*=alert-styled-]:after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Style for replacing icon with PNG */
+.custom-success .custom-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Completely hide any default icon from Bootstrap or template */
 .alert[class*=alert-]::before,
 .alert[class*=alert-]::after {
   content: none !important;
   display: none !important;
 }
 
-/* ✅ PNG icon style */
+/* Force PNG icon inline */
 .custom-success .custom-icon {
-  width: 30px;              /* Match second screenshot */
-  height: 30px;
-  margin-right: 12px;
-  margin-left: 8px;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
   vertical-align: middle;
-}
-
-/* ✅ Keep text centered with icon */
-.custom-success {
-  display: flex;
-  align-items: center;
-  padding: 14px 20px;        /* Adjust padding if needed */
-  font-size: 16px;
 }
