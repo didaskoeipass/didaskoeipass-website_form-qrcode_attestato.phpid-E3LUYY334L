@@ -1,6 +1,6 @@
 /* HORIZONTAL ICON + TEXT IN ALERT */
 .alert.custom-success {
-  padding: 10px 15px;
+  padding: 10px 10px;
   font-size: 14px;
   line-height: 1.4;
   border-radius: 4px;
@@ -16,6 +16,6 @@
 /* SMALL ICON INLINE */
 .custom-success .custom-icon {
   width: 24px;
-  height: 25px;
+  height: 24px;
   display: inline-block;
 }
