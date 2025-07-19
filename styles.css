@@ -35,3 +35,16 @@
   margin-right: 10px;
   vertical-align: middle;
 }
+
+.alert.alert-success:before {
+  content: "";
+  display: inline-block;
+  background-image: url('Untitled-1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
