@@ -22,17 +22,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ✅ Remove built-in icon decorations */
+/* ✅ Remove default alert icons */
 .alert[class*=alert-]::before,
 .alert[class*=alert-]::after {
   display: none !important;
   content: none !important;
 }
 
-/* ✅ Style for custom PNG icon */
+/* ✅ Style for PNG success icon */
+.alert.alert-success.custom-success {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid #c3e6cb;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 4px;
+}
+
+/* ✅ Bigger icon */
 .custom-success .custom-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 12px;
+  width: 80px;
+  height: 80px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+/* ✅ Style for the success message */
+.custom-success .text-semibold {
+  display: inline-block;
   vertical-align: middle;
+  font-size: 16px;
+  font-weight: 600;
 }
