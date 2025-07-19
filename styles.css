@@ -35,3 +35,18 @@
   margin-right: 10px;
   vertical-align: middle;
 }
+
+
+/* Remove default :after icon from styled alerts */
+.alert[class*=alert-styled-]:after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Style for replacing icon with PNG */
+.custom-success .custom-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
