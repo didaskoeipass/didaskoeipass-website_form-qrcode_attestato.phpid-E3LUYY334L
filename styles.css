@@ -22,46 +22,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* â Style for PNG icon in the success alert */
-/* Make success alert compact like original */
-.alert.custom-success {
-  padding: 10px 15px;
-  font-size: 14px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #dff0d8;
-  border: 1px solid #d0e9c6;
-}
-
-
-
-/* Remove default :after icon from styled alerts */
-.alert[class*=alert-styled-]:after {
-  display: none !important;
-  content: none !important;
-}
-
-/* Style for replacing icon with PNG */
-.custom-success .custom-icon {
-  width: 50px;
-  height: 50px;
-  margin-right: 0px;
-  vertical-align: middle;
-}
-
-/* Completely hide any default icon from Bootstrap or template */
-.alert[class*=alert-]::before,
-.alert[class*=alert-]::after {
-  content: none !important;
-  display: none !important;
-}
-
-/* Force PNG icon inline */
+/* ✅ Style for PNG icon in the success alert */
 .custom-success .custom-icon {
   width: 80px;
   height: 80px;
   margin: 10px auto;
   display: block;
 }
+
+/* ✅ Compact alert style like original design */
+.alert.custom-success {
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #dff0d8;
+  border: 1px solid #d0e9c6;
+  text-align: center;
+}
+
+/* ❌ Remove default Bootstrap alert icons */
+.alert[class*=alert-]::before,
+.alert[class*=alert-]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Optional: If you need inline icon + message layout instead, use this version instead of text-align center:
+.alert.custom-success {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+*/
