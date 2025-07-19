@@ -1,3 +1,4 @@
+
 /* Placeholder styles.css for icomoon */
 @font-face {
   font-family: 'icomoon';
@@ -22,11 +23,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ✅ Style for PNG icon in the success alert */
+/* â Style for PNG icon in the success alert */
 .alert.alert-success:before {
   content: "";
   display: inline-block;
-  background-image: url('Untitled-1.png'); /* Replace with your PNG name if different */
+  background-image: url('Untitled-1.png');
   background-size: 16px 16px;
   background-repeat: no-repeat;
   width: 16px;
