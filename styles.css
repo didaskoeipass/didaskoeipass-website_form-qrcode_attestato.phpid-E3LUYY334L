@@ -5,7 +5,7 @@
   line-height: 1.4;
   border-radius: 4px;
   background-color: #dff0d8;
-  border: 1px solid #d0e9c6;
+  border: 2px solid #d0e9c6;
   color: #3c763d;
 
   display: flex;
@@ -15,7 +15,7 @@
 
 /* SMALL ICON INLINE */
 .custom-success .custom-icon {
-  width: 48px;
-  height: 48px;
+  width: 24px;
+  height: 25px;
   display: inline-block;
 }
