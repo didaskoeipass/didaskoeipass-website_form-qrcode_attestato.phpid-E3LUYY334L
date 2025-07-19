@@ -1,29 +1,21 @@
-
-/* ICON ABOVE, COMPACT, CLASSIC ALERT LOOK */
-.custom-success .custom-icon {
-  width: 50px;
-  height: 50px;
-  display: block;
-  margin: 0 auto 5px auto;
-}
-
-/* SMALLER ALERT BOX + CLEAN ALIGNMENT */
+/* HORIZONTAL ICON + TEXT IN ALERT */
 .alert.custom-success {
-  padding: 10px 15px 5px 15px;
+  padding: 10px 15px;
   font-size: 14px;
   line-height: 1.4;
   border-radius: 4px;
   background-color: #dff0d8;
   border: 1px solid #d0e9c6;
-  text-align: center;
-  display: block;
-  margin-bottom: 20px;
   color: #3c763d;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* REMOVE UNWANTED ICONS */
-.alert[class*=alert-]::before,
-.alert[class*=alert-]::after {
-  content: none !important;
-  display: none !important;
+/* SMALL ICON INLINE */
+.custom-success .custom-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
 }
