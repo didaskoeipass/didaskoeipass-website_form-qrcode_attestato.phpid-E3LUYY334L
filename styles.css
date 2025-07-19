@@ -22,36 +22,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ✅ Remove default alert icons */
+/* ✅ Remove built-in checkmark icon */
 .alert[class*=alert-]::before,
 .alert[class*=alert-]::after {
-  display: none !important;
   content: none !important;
+  display: none !important;
 }
 
-/* ✅ Style for PNG success icon */
-.alert.alert-success.custom-success {
+/* ✅ PNG icon style */
+.custom-success .custom-icon {
+  width: 30px;              /* Match second screenshot */
+  height: 30px;
+  margin-right: 12px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* ✅ Keep text centered with icon */
+.custom-success {
   display: flex;
   align-items: center;
-  padding: 12px 16px;
-  border: 1px solid #c3e6cb;
-  background-color: #d4edda;
-  color: #155724;
-  border-radius: 4px;
-}
-
-/* ✅ Bigger icon */
-.custom-success .custom-icon {
-  width: 80px;
-  height: 80px;
-  margin-right: 16px;
-  flex-shrink: 0;
-}
-
-/* ✅ Style for the success message */
-.custom-success .text-semibold {
-  display: inline-block;
-  vertical-align: middle;
+  padding: 14px 20px;        /* Adjust padding if needed */
   font-size: 16px;
-  font-weight: 600;
 }
