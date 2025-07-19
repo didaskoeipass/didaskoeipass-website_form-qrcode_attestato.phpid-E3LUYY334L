@@ -28,7 +28,7 @@
   content: "";
   display: inline-block;
   background-image: url('Untitled-1.png');
-  background-size: 16px 16px;
+  background-size: 30px 30px;
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
@@ -45,8 +45,8 @@
 
 /* Style for replacing icon with PNG */
 .custom-success .custom-icon {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   margin-right: 10px;
   vertical-align: middle;
 }
