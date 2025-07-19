@@ -22,35 +22,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ✅ Style for PNG icon in the success alert */
-.custom-success .custom-icon {
-  width: 80px;
-  height: 80px;
-  margin: 10px auto;
-  display: block;
-}
-
-/* ✅ Compact alert style like original design */
+/* ✅ Final compact success box with icon on top */
 .alert.custom-success {
-  padding: 10px 15px;
+  padding: 10px 15px 5px 15px;
   font-size: 14px;
   border-radius: 4px;
   background-color: #dff0d8;
   border: 1px solid #d0e9c6;
   text-align: center;
+  display: block;
+  margin-bottom: 20px;
 }
 
-/* ❌ Remove default Bootstrap alert icons */
-.alert[class*=alert-]::before,
-.alert[class*=alert-]::after {
-  content: none !important;
-  display: none !important;
+/* ✅ Icon on top, centered */
+.custom-success .custom-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 5px auto;
+  display: block;
 }
-
-/* Optional: If you need inline icon + message layout instead, use this version instead of text-align center:
-.alert.custom-success {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-*/
