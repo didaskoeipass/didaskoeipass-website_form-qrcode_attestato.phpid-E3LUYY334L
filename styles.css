@@ -31,7 +31,7 @@
 
 /* ✅ Style for custom PNG icon */
 .custom-success .custom-icon {
-  width: 80px; /* Make it bigger here */
+  width: 80px;
   height: 80px;
   margin-right: 12px;
   vertical-align: middle;
