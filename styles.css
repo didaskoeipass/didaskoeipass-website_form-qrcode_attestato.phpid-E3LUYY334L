@@ -15,8 +15,8 @@
 
 /* SMALL ICON INLINE */
 .custom-success .custom-icon {
-  width: 48px;
-  height: 48px;
+  width: 24px;
+  height: 24px;
   display: inline-block;
-margin-left: -4px;  /* Push icon closer to the edge */
+margin-left: -6px;  /* Push icon closer to the edge */
 }
