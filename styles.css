@@ -1,4 +1,5 @@
-/* Placeholder styles.css for icomoon */@font-face {
+/* Placeholder styles.css for icomoon */
+@font-face {
   font-family: 'icomoon';
   src:  url('icomoon.eot');
   src:  url('icomoon.eot?#iefix') format('embedded-opentype'),
@@ -19,4 +20,18 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ✅ Custom alert icon override */
+.alert.alert-success:before {
+  content: none !important;
+  display: none !important;
+}
+
+/* ✅ Style for the PNG icon inside the alert */
+.alert.alert-success img.custom-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
